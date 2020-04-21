@@ -1,0 +1,127 @@
+* { 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body{
+	background: 
+url('https://www.publicdomainpictures.net/pictures/60000/velka/at-the-beach-of-atlantic-ocean.jpg') no-repeat center center fixed;
+
+
+/*background: red;*/
+/*background: #AB8CAB;*/
+}
+
+.header img {
+  float: left;
+  /*width: 100px;
+  height: 100px;*/
+  
+}
+
+.header h2 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #F6C8F6;
+    padding: 20px;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+input[type=text],input[type=tel],input[type=email],select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;/*La propiedad resize de CSS permite controlar la capacidad de cambio de tamaño de un elemento.*/
+}
+
+
+
+label {
+    padding: 12px 12px 12px 0;/*padding-top, padding-right, padding-bottom, and padding-left*/
+    display: inline-block;/*crear una cuadrícula de cajas que llene el navegador armoniosamente*/
+    float: right;
+    font-weight: bold;
+    color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";/*Se usa generalmente para añadir contenido estético a un elemento, usando la propiedad CSS content*/
+    display: table;
+    clear: both;
+    /*La propiedad CSS clear especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos. La propiedad clear aplica a ambos elementos flotantes y no flotantes.*/
+}
+
+.row2{
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+}
+.boton{
+	padding-top: 15px;
+}
+
+.boton_menu{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+   border: 2px solid #0016b0;
+  }
+  .boton_menu:hover{
+    color: black;
+    background-color: #E5DBD9;
+    cursor: pointer;
+  }
+
+.mayusculas{
+text-transform: uppercase;  
+}
+
+/*operando con responsividad*/
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    label {
+    padding: 12px 12px 12px 0;/*padding-top, padding-right, padding-bottom, and padding-left*/
+    display: inline-block;/*crear una cuadrícula de cajas que llene el navegador armoniosamente*/
+    float: left;
+}
+}

@@ -1,0 +1,145 @@
+/* *= selector universla aplica para todas las etiquetas
+La propiedad box-sizing se usa para modificar las propiedades por defecto del CSS box model que calculan el alto y el ancho de los elementos*/ 
+/*
+Estas son las propiedades con prefijo de proveedor que ofrecen los motores de representación relevantes (-webkit para Chrome, Safari; -moz para Firefox, -o para Opera, -ms para Internet Explorer). Por lo general, se utilizan para implementar funciones CSS nuevas o patentadas, antes de la aclaración / definición final por parte del W3.*/
+* { 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body{
+  /*background: url('https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1485547918/new-york-city-skyline-BIGCITY0117.jpg') no-repeat center center fixed; */
+/*  background: url('http://www.publicdomainpictures.net/pictures/50000/velka/flower-meadow.jpg') no-repeat center center fixed;*/
+/*background: url('https://www.publicdomainpictures.net/pictures/220000/velka/sandy-beach-1495208439ToU.jpg') no-repeat center center fixed;*/
+background: url('https://www.publicdomainpictures.net/pictures/60000/velka/at-the-beach-of-atlantic-ocean.jpg') no-repeat center center fixed;
+}
+
+h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.header img {
+  float: left;
+  /*width: 100px;
+  height: 100px;*/
+  
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+input[type=text],input[type=tel],input[type=email],select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;/*La propiedad resize de CSS permite controlar la capacidad de cambio de tamaño de un elemento.*/
+}
+
+label {
+    padding: 12px 12px 12px 0;/*padding-top, padding-right, padding-bottom, and padding-left*/
+    display: inline-block;/*crear una cuadrícula de cajas que llene el navegador armoniosamente*/
+    float: right;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #F6C8F6;
+    padding: 20px;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.col-100 {
+    float: left;
+    width: 99%;
+    margin-top: 16px;
+}
+
+ .boton_menu{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 200;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+  .boton_menu:hover{
+    color: black;
+    background-color: #ffffff;
+  }
+
+
+.boton{
+	padding-top: 15px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";/*Se usa generalmente para añadir contenido estético a un elemento, usando la propiedad CSS content*/
+    display: table;
+    clear: both;
+    /*La propiedad CSS clear especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos. La propiedad clear aplica a ambos elementos flotantes y no flotantes.*/
+}
+
+/*Diseño receptivo: cuando la pantalla tiene al 
+menos de 600 píxeles de ancho, 
+haga que las dos columnas se apilen una 
+encima de la otra en lugar de una al lado de la otra */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    label {
+    padding: 12px 12px 12px 0;/*padding-top, padding-right, padding-bottom, and padding-left*/
+    display: inline-block;/*crear una cuadrícula de cajas que llene el navegador armoniosamente*/
+    float: left;
+}
+}
